@@ -1,0 +1,6 @@
+xlrd==1.2.0
+pandas==1.0.5
+seaborn==0.10.1
+streamlit==0.75.0
+matplotlib==3.2.2
+playsound==1.2.2
