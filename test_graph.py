@@ -2,6 +2,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
+import xlrd
+
 df = pd.read_excel('2021.01.28 - ANTALIS PACKAGING - Analyse scraping.xls')
 #df
 palette_quantile= ['cornflowerblue','grey','lightcoral']  # haut / moyen / bas
@@ -87,10 +89,3 @@ fig.tight_layout(pad=8)
 st.pyplot(fig, transparent=True)
 
 
-import multiprocessing
-from playsound import playsound
-
-p = multiprocessing.Process(target=playsound, args=("/Users/valentinpasquier/Downloads/streamlit_test/Oval.mp3",))
-p.start()
-input("press ENTER to stop playback")
-p.terminate()
